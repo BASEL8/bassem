@@ -1,0 +1,103 @@
+// import local font
+@font-face {
+  font-family: '29LT Kaff';
+  src: url('./alfont_com_AlFont_com_29LTKaff-Light.ttf');
+}
+@font-face {
+  font-family: '29LT Kaff Medium';
+  src: url('./alfont_com_29LT-Kaff-Medium.ttf');
+}
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  max-width: 1500px;
+}
+.about_container.ar {
+  text-align: right;
+}
+.about_container.ar .description {
+  text-align: right;
+  font-family: '29LT Kaff';
+  font-style: normal;
+  font-weight: 250;
+  font-size: 45px;
+  line-height: 120px;
+  /* or 127% */
+  text-align: right;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off, 'liga' off;
+  color: #000000;
+}
+.about_container .description b,
+.about_container .description strong {
+  font-size: 45px;
+  font-weight: 900;
+}
+.about_container.ar .title {
+  font-family: '29LT Kaff Medium';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 350px;
+  /* identical to box height, or 37% */
+
+  text-align: right;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #000000;
+}
+.about_container .title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 350px;
+  /* identical to box height, or 37% */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-align: left;
+  width: 100%;
+  color: #000000;
+}
+.about_container .description {
+  flex: 1;
+  font-family: 'Bellota Text';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 80px;
+  /* or 118% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off, 'liga' off;
+
+  color: #000000;
+}
+
+.about_container .language_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+.about_container .language_container > * {
+  font-family: 'Bellota Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off, 'liga' off;
+
+  color: #000000;
+  cursor: pointer;
+}
+.about_container .language_container .selected {
+  text-decoration: underline;
+}

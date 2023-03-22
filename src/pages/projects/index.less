@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+
+.projects_container {
+  max-width: 1500px;
+}
+
+.projects_container .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px 0px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.projects_container .container {
+  border: 5px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 27px;
+}
+.projects_container .container.justTitle {
+  border: none;
+  padding: 0px;
+  width: 100vw;
+  word-spacing: 9999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects_container .container .content.hide .hidden_text {
+  display: none;
+}
+.projects_container .content .headline {
+  font-size: 74px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  display: block;
+}
+.projects_container .title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 130px;
+  text-transform: capitalize;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.projects_container .subtitle {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 99px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  margin-bottom: 44px;
+}
+
+.projects_container .content,
+.hidden_text {
+  font-family: 'Bellota Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off, 'liga' off;
+  color: #000000;
+}
+
+.projects_container .article .footer {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.projects_container .eventAddress {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-transform: capitalize;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+.projects_container .year {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-transform: capitalize;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+.projects_container .toggleButtonContainer .toggleButton {
+  font-family: 'Bellota Text';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off, 'liga' off;
+  color: #000000;
+  cursor: pointer;
+}
+.projects_container .justTitle.text {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 300px;
+  line-height: 295px;
+  letter-spacing: 0.325em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  max-width: 1500px;
+  width: 100%;
+}
+.projects_container .justTitle.text::after {
+  content: '.';
+  margin-left: -81px;
+}
+.projects_container .article .images {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  padding-left: 180vw;
+  padding-right: 90vw;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.projects_container .article .images::-webkit-scrollbar {
+  display: none;
+}
+.projects_container .article .images .img {
+  max-height: 850px;
+  object-fit: contain;
+  margin-right: 30px;
+}
